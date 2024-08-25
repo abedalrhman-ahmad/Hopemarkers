@@ -1,0 +1,385 @@
+*{
+    padding: 0;
+    margin: 0;
+font-family: sans-serif;
+}
+body {
+    font-family: "Poppins", sans-serif;
+   max-width: 100%;
+
+    /* background-image: linear-gradient(112.5deg, rgb(169,169,169) 0%, rgb(169,169,169) 10%,rgb(169,169,169) 10%, rgb(169,169,169) 53%,rgb(128,128,128) 53%, rgb(128,128,128) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(169,169,169) 91%, rgb(169,169,169) 100%),linear-gradient(157.5deg, rgb(169,169,169) 0%, rgb(169,169,169) 10%,rgb(169,169,169) 10%, rgb(169,169,169) 53%,rgb(128,128,128) 53%, rgb(128,128,128) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(169,169,169) 91%, rgb(169,169,169) 100%),linear-gradient(293deg, rgb(169,169,169) 0%, rgb(169,169,169) 10%,rgb(169,169,169) 10%, rgb(169,169,169) 53%,rgb(128,128,128) 53%, rgb(128,128,128) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(169,169,169) 91%, rgb(169,169,169) 100%),linear-gradient(248deg, rgb(169,169,169),rgb(169,169,169)); background-blend-mode:overlay,overlay,overlay,normal;
+background-repeat: no-repeat; */
+
+  }
+  /* html {
+    scroll-behavior: smooth;
+  } */
+
+nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+width: 100%;
+margin: 7px;
+padding-top: 10px;
+
+}
+ul{
+    display: flex;
+   
+   
+}
+ul li{
+    list-style: none;
+    padding: 20px;
+}
+ul li a{
+text-decoration: none;
+color: black;
+padding: 10px;
+
+font-size: 20px;
+
+}
+#logo a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+#logo{
+    padding-left: 20px;
+    font-weight: bold;
+text-transform: capitalize;
+}
+img{
+    width: 100%;
+  
+}
+
+
+ul li a:hover{
+
+color: lavender;
+background-color: rgba(150, 150, 150,20);
+border-radius: 20px;
+color: black;
+transition: 0.5s;
+font-weight: bold;
+
+}
+
+#center{
+    text-align: center;
+    transform: translateY(50%);
+}
+.list{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+margin-top: 50px;
+}
+.crd{
+    margin: 20px 20px;
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+    cursor: pointer;
+  
+}
+
+.crdimage img{
+    width: 100%;
+   height: 100%;
+   
+   border-radius: 12px;
+  
+   box-shadow: 5px 5px 30px 7px rgba(0,0 , 0, 0.25),
+   -5px -5px 30px 7px rgba(0,0 , 0, 0.22);
+}
+
+.crdtitle{
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+
+.crdimage img:hover{
+    transition: 0.3s;
+    transform: scale(1.1,1.2);
+}
+
+
+
+
+.note{
+    /* background-color: red; */
+    width: 80%;
+   height:50%;
+   text-align: center;
+   padding-top: 2%;
+
+}
+#notes{
+    padding: 1%;
+    margin-top: 1%;
+    border-radius: 10px;
+}
+
+#notes:hover{
+    transition: 0.5s;
+    transform: scale(1.1,1.1);
+    background-color: red;
+}
+#inputnotes{
+    padding-top: 3%;
+}
+footer{
+   
+  
+
+
+width: 100%;
+height: 400px;
+margin-top: 7%;
+
+
+}
+.con2{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   height: inherit;
+   font-weight: bold;
+}
+.con2 h2{
+    margin: 10px;
+}
+
+
+
+.des{
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+}
+ .des p{
+    padding: 13px;
+}
+
+
+
+.fas {
+    font-size: 25px;
+    color: rgb(204, 63, 63);
+}
+.fab{
+    font-size: 25px;
+    color: green;
+}
+.fab:hover,.fas:hover{
+    transition: 0.5s;
+transform: scale(1.3,1.3);
+}
+
+
+
+ 
+
+#ani{
+    background-image: url(imges/swap7.jpg);
+  
+    width: 40%; 
+    height: 350px;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 30px 7px rgba(0,0 , 0, 0.25),
+    -5px -5px 30px 7px rgba(0,0 , 0, 0.22);
+    animation-name: photo;
+    animation-delay: 4s;
+    animation-duration: 20s;
+    animation-iteration-count: 10;
+    background-size: cover;
+
+    border-radius: 10px;
+    
+}
+.con3{
+  margin-top: 10%;
+  margin-bottom: 10%;
+    width: 80%;
+   transform: translateX(10%);
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding: 10px;
+    flex-wrap: wrap;
+   border-radius: 12px ;
+   background-color: rgba(0,0 , 0, 0.2);
+    }
+    .textdes{
+        width: 40%;
+        
+        letter-spacing: 1px;
+        padding: 70px;
+        text-align: justify;
+    }
+
+    .textdes h3{
+        padding: 3% 0px;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+   
+
+    .form {
+        position: static;
+        
+        width: 100%;
+        margin-top: 20px;
+        background: none;
+        box-shadow: none;
+    }
+
+  
+
+#ani{
+    background-image: url(imges/swap7.jpg);
+  
+    width: 40%; 
+    height: 350px;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 30px 7px rgba(0,0 , 0, 0.25),
+    -5px -5px 30px 7px rgba(0,0 , 0, 0.22);
+    animation-name: photo;
+    animation-delay: 4s;
+    animation-duration: 20s;
+    animation-iteration-count: 10;
+    background-size: cover;
+    
+}
+.con3{
+  margin-top: 10%;
+  margin-bottom: 10%;
+    width: 80%;
+   transform: translateX(10%);
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding: 10px;
+    flex-wrap: wrap;
+   border-radius: 12px ;
+   background-color: rgba(0,0 , 0, 0.2);
+    }
+    .textdes{
+        width: 40%;
+        
+        letter-spacing: 1px;
+        padding: 70px;
+        text-align: justify;
+    }
+
+    .textdes h3{
+        padding: 3% 0px;
+        text-align: center;
+    }
+}
+    @media (max-width: 630px) {
+        .textdes {
+          width: 100%;
+        }
+        #ani{
+            width: 80%;
+            height: 200px;
+          transform: translateX(10%);
+        }
+      
+        .textdes {
+          padding: 30px; 
+        }
+      }
+      #btn{
+        background-color: rgb(147, 147, 170);
+        width: 100%;
+        height: 30px;
+        border-radius: 12px;
+        
+      }
+      @media (min-width: 631px) and (max-width:875px){
+        .textdes {
+          width: 100%;
+        }
+        #ani{
+          
+            width: 70%;
+            height: 250px;
+          transform: translateX(15%);
+        }
+      
+        .textdes {
+          padding: 30px; 
+        }
+      }
+
+
+
+
+
+
+
+
+
+      
+@keyframes photo{
+
+10%{
+background-image: url(imges/swap1.jpg);
+
+}
+20%{
+
+    background-image: url(imges/swap2.jpg);
+}
+30%{
+
+    background-image: url(imges/swap3.jpg);
+}40%{
+
+    background-image: url(imges/swap4.jpg);
+}50%{
+
+    background-image: url(imges/swap5.jpg);
+}70%{
+
+    background-image: url(imges/swap6.jpg);
+}100%{
+
+    background-image: url(imges/swap7.jpg);
+}
+
+
+
+
+}
+
+.relative{
+width: 70%; 
+transform: translateX(20%);
+position: relative;
+}
+

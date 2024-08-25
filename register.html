@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="regstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <nav>
+        <p id="logo"><a href="index.html">HOPE MARKERS </a>
+        </p>
+        <ul>
+
+            <li><a href="register.html">التسجيل</a></li>
+            <li><a href="index.html">الرئيسية</a></li>
+
+        </ul>
+    </nav>
+    <!-- action="https://api.web3forms.com/submit" -->
+<div class="rel3">
+   
+
+  
+       
+        <div class="form"  style="margin-top: 50px;">
+            <form   onsubmit="handleFormSubmit(event)">
+
+                <h3>Register now/سجل الان</h3>
+                <input type="hidden" name="access_key" value="584d1c09-6bc6-4de6-9574-55626337f9db">
+                <div class="both">
+                    
+                    <label for="name">Name/الاسم: </label>
+                    <input type="text" name="name" placeholder="" id="name">
+                </div><br>
+                <div class="both">
+                    <label for="mail">Mail/الايميل :</label>
+                    <input type="email" placeholder="" name="email" id='mail' >
+                </div><br>
+                <div class="both">
+                    <label for="tel">Telephone/ هاتف:</label>
+                    <input type="tel" name="tel" placeholder="" id="tel">
+                </div><br>
+                <div class="both">
+                    <label for="date">Geburtstdatum/تاريخ الميلاد :</label>
+                    <input type="date" name="date" placeholder="" id="date">
+                </div><br>
+                <div class="both">
+                    <label for="school">schudel/المدرسة :</label>
+                    <select name="school" id="school">
+                        <option value="" selected>select here / اختر المدرسة هنا</option>
+                        <option value="Volksschule">Volksschule</option>
+                        <option value="Mittelschule">Mittelshchule</option>
+                        <option value="Gymnasium">Gymnasium</option>
+                        <option value="Sprachkurs">Sprachkus</option>
+                    </select>
+                </div><br>
+                <div class="both">
+                    <label for="class">Klasse/الصف :</label>
+                    <select name="class" id="class">
+                        <option value="" selected>select here/ اختر الصف هنا :</option>
+                        <option value="Kurs 1">Kurs 1</option>
+                        <option value="Kurs 2">Kurs 2</option>
+                        <option value="Kurs 3">Kurs 3</option>
+                        <option value="Kurs 4">Kurs 4</option>
+                    </select>
+                </div><br>
+                <div class="both">
+                    <label for="subject">Thema/المادة :</label>
+                    <select name="subject" id="subject">
+                        <option value="" selected>select here/ اختر المادة هنا</option>
+                        <option  value="Mathematik">Mathematic/الرياضيات</option>
+                        <option  value="Physik">Physik/فيزياء</option>
+                        <option value="Deutsch">Deutsch/الألمانية</option>
+                        <option value="English">English/الإنكليزية</option>
+                        <option  value="Arabisch">Arabisch/العربية</option>
+                    </select>
+                </div><br>
+                <button  type="submit" onclick="thanks(), res()"  id="btn">Submit/ارسال</button>
+                
+
+
+    </form>
+        </div>
+
+    </div>
+
+    <div class="swap"  >
+        <div class="container start-animation">
+            <div class="car">شكرا لك على التسجيل سيتم التواصل معكم</div>
+            <div class="car">Danke für Ihre Anmeldung- Wir melden uns bald bei Ihnen</div>
+            <div class="car">Thank you for registering ,we will contact you </div>
+        </div>
+    </div>
+    
+
+  <!-- new -->
+  <form onsubmit="return handleFormSubmit(event)">
+    <input type="hidden" name="access_key" value="584d1c09-6bc6-4de6-9574-55626337f9db">
+
+<div style="display: flex;height: 30vh; justify-content: center;align-items: center;margin-top: 30px;" >
+    <div class="subscribe" >
+       
+      <p style="letter-spacing: 0;">Notizen/ملاحظات</p>
+      <input   style="color: black; border: 1px solid black;" class="subscribe-input" name="Notes:" type="text" id="inputnotes">
+      <br>
+      <button class="submit-btn" style="letter-spacing: 0; font-weight: bold;">sende/ارسال</button>
+
+      </div>
+      
+    </div>
+  </div>
+</form>
+
+
+
+<footer>
+    <div class="con2">
+<h2>Kontakt/تواصل معنا</h2>
+
+
+<div class="des">
+    <div class="whats"> 
+        <p>farrahismail@gmial.com : gmial/ايميل <i class="fas fa-envelope" id="ic"></i> <p>
+        <p > 00436764307846 : WhatsApp/واتساب <i class="fab fa-whatsapp" id="ic"></i></p>
+       </div>
+    <div class="place">   
+          <p>  Öffnungszeilen/وقت ومكان التواجد</p>
+        <p>Freitag-Montag(9:00-19:00)</p>
+            <p>samstag ( 12:00-21:00)</p></div>
+
+</div>
+
+</footer>
+
+
+<script src="js.js"></script>
+</body>
+</html>
