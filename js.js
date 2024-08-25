@@ -6,7 +6,7 @@ let date = document.getElementById('date');
 let school = document.getElementById('school');
 let className = document.getElementById('class');
 let subject = document.getElementById('subject');
-
+let note =document.getElementsByClassName('subscribe-input')
 
 function thanks(){
    
@@ -21,13 +21,7 @@ function thanks(){
     }
   
    
-    console.log(name.value)
-    console.log(mail.value)
-    console.log(tel.value)
-    console.log(date.value)
-    console.log(school.value)
-    console.log(className.value)
-    console.log(subject.value)
+  
  
 }
 function res(){
@@ -38,25 +32,31 @@ function res(){
         alert('fyll ut Soknaden fullstendig/قم بتعبئة الطلب كاملا');
         
     }
+    else{
+        thanks();
+        
+    }
 }
 
 function handleFormSubmit(event) {
     event.preventDefault(); 
 
-   
     const formData = new FormData(event.target);
 
-    // Send data using fetch
     fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         body: formData,
     })
     .then(response => {
         if (response.ok) {
-            // Call thanks() function on successful submission
-            thanks(); 
+            thanks(); // Call thanks() function on successful submission
+            
+            // Set a timeout to call abed() function after 2 seconds
+            setTimeout(() => {
+                clear();
+                clearnote();
+            }, 500);
         } else {
-            // Handle errors if needed
             console.error('فشل الإرسال');
         }
     })
@@ -65,5 +65,20 @@ function handleFormSubmit(event) {
     });
 }
 
- 
-
+function clear(){
+  
+    name.value = '';
+    mail.value = '';
+    tel.value = '';
+    date.value = '';
+    school.value = '';
+    className.value = '';
+    subject.value = '';
+  
+  
+}
+function clearnote() {
+    for (let i = 0; i < note.length; i++) {
+        note[i].value = ''; // Clear each note input
+    }
+}
